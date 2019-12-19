@@ -75,7 +75,10 @@ img {
     position: relative;
 }
 .img-slider {
-    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
 }
 .overlay {
     width: 100%;
