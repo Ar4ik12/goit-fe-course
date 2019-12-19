@@ -68,6 +68,9 @@ img {
     color: #29c0a3;
 }
 /* slider */
+.section-slider {
+    position: relative;
+}
 .slider-box {
     position: relative;
 }
