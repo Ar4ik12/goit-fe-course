@@ -87,7 +87,7 @@ img {
 .button-center {
     position: absolute;
     left: 50%;
-    top: 232px;
+    top: 250px;
     transform: translateX(-50%);
 }
 .button {
