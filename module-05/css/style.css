@@ -23,7 +23,7 @@ img {
 .main-header {
     display: block;
     margin: 0 auto;
-    margin-top: 30px;
+    padding-top: 30px;
     margin-bottom: 30px;
 }
 .site-logo {
@@ -80,7 +80,9 @@ img {
     height: 600px;
     object-fit: cover;
 }
-.overlay {
+.overlay::before {
+    content: "";
+    display: block;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -138,8 +140,8 @@ img {
 .clider-text {
     position: absolute;
     left: 50%;
-    top: 200px;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 /* secton-colection */
 .section-collection {
@@ -166,14 +168,12 @@ img {
     margin-top: 30px;
 }
 .collection-items {
+    position: relative;
     display: block ;
     float: left;
     width: 255px;
     font-size: 0;
     margin-right: 30px
-}
-.collection-items {
-    position: relative;
 }
 .collection-items:last-child {
     margin-right: 0px;
@@ -270,7 +270,7 @@ img {
 .button-collection:hover {
     background-color: #1abc9c;
 }
-.bakgraund-products:hover {
+.guidance:hover .bakgraund-products {
     background-color: #1abc9c;
 }
 /* fuuter */
