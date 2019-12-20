@@ -92,8 +92,8 @@ img {
 .button-center {
     position: absolute;
     left: 50%;
-    top: 250px;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .button {
     width: 106px;
@@ -190,6 +190,7 @@ img {
     color: #ffffff;
     text-align: center;
     margin-left: 14px;
+    text-decoration: none;
 }
 .price-products {
     font-family: "Roboto", sans-serif;
