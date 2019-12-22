@@ -44,9 +44,11 @@ img {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
+    transition: linear 200ms;
 }
 .site-nav-link:hover {
     color: #f38181;
+    transition: linear 200ms;
 }
 .site-nav-link::after {
     display: block;
@@ -197,9 +199,11 @@ img {
     height: 56px;
     display: block;
     margin-right: 1px;
+    transition: linear 200ms;
 }
 .link-items:hover {
     background-color: #95e1d3;
+    transition: linear 200ms;
 }
 .facebook {
     background-image: url(../image/team/facebook.png);
@@ -266,8 +270,9 @@ img {
     text-transform: uppercase;
     font-weight: bold;
     color: #ffffff;
+    cursor: pointer;
 }
-.input {
+.input::placeholder {
     width: 230px;
     height: 40px;
     font-family: "Roboto";
