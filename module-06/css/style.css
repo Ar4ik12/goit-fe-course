@@ -50,21 +50,10 @@ img {
     color: #f38181;
     transition: linear 200ms;
 }
-.site-nav-link::after {
-    display: block;
-    content: "";
-    background-color: #f38181;
-    width: 50px;
-    height: 4px;
-    opacity: 0;
-}
-.site-nav-items:hover::after {
-    content: "";
-    background-color: #f38181;
-    width: 50px;
-    height: 4px;
-    display: flex;
-    opacity: 1;
+.site-nav-link:hover {
+    padding-bottom: 10px;
+    border-bottom: 3px solid #f38181;
+    transition: linear 200ms;
 }
 /* Services */
 .services {
@@ -255,7 +244,12 @@ img {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     line-height: 16px;
+    color: #95e1d3;
+    transition: linear 200ms;
+}
+.clic-laaqiq:hover {
     color: #f38181;
+    transition: linear 200ms;
 }
 .form-footer {
     display: flex;
