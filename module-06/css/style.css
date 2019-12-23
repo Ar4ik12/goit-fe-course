@@ -273,6 +273,7 @@ img {
 .input {
     width: 230px;
     padding-left: 6px;
+    border-right: 0;
 }
 .input::placeholder {
     width: 230px;
