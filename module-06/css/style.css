@@ -72,11 +72,13 @@ img {
     text-align: center;
 }
 .logo-two {
+    display: block;
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
     color: rgb(51, 51, 51);
+    padding-top: 20px;
 }
 .logo-two::after {
     content: "";
@@ -147,12 +149,18 @@ img {
     font-family: "Roboto", sans-serif;
     color: rgb(153, 153, 153);
     text-align: center;
+    margin: 0 auto;
     margin-bottom: 90px;
+    max-width: 980px;
 }
 .team {
     display: flex;
     list-style: none;
     justify-content: space-between;
+}
+.team-list-link {
+    width: 380px;
+    height: 470px;
 }
 .team-list {
     position: relative;
@@ -168,13 +176,19 @@ img {
     align-items: center;
     background-image: linear-gradient( rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
     opacity: 0;
-    box-shadow: 10px 10px 0 #95e1d3;
-    transform: translate(-10px, -10px);
-    transition: linear 200ms;
+    transition-duration: 200ms;
 }
 .team-list-link:hover .overlay {
     opacity: 1;
-    transition: linear 200ms;
+    transition-duration: 200ms;
+    box-shadow: 10px 10px 0 #95e1d3;
+    transform: translate(-10px, -10px);
+}
+.team-list-link:hover .img-team {
+    transform: translate(-10px, -10px);
+}
+.img-team {
+    transition-duration: 200ms;
 }
 .list-link {
     list-style: none;
@@ -233,6 +247,7 @@ img {
     height: 62px;
     justify-content: space-between;
     align-items: center;
+    border-top: 2px solid #e5e5e5;
 }
 .footer-text {
     font-family: "Montserrat", sans-serif;
@@ -244,10 +259,6 @@ img {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     line-height: 16px;
-    color: #95e1d3;
-    transition: linear 200ms;
-}
-.clic-laaqiq:hover {
     color: #f38181;
     transition: linear 200ms;
 }
@@ -266,11 +277,15 @@ img {
     color: #ffffff;
     cursor: pointer;
 }
+.input {
+    width: 230px;
+    height: 40px;
+    padding-left: 6px;
+}
 .input::placeholder {
     width: 230px;
     height: 40px;
     font-family: "Roboto";
     font-style: italic;
     font-size: 14px;
-    padding-left: 6px;
 }
