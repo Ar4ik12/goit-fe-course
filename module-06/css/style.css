@@ -47,13 +47,10 @@ img {
     transition: linear 200ms;
 }
 .site-nav-link:hover {
-    color: #f38181;
-    transition: linear 200ms;
-}
-.site-nav-link:hover {
     padding-bottom: 10px;
     border-bottom: 3px solid #f38181;
     transition: linear 200ms;
+    color: #f38181;
 }
 /* Services */
 .services {
@@ -137,11 +134,8 @@ img {
     background-image: url(../image/services/IMAGE.png);
 }
 /* TEAM */
-.Container-main {
-    margin-bottom: 80px;
-}
-.logo {
-    margin-bottom: 90px;
+.container-team {
+    padding-bottom: 86px;
 }
 .text-team {
     font-size: 15px;
@@ -160,7 +154,6 @@ img {
 }
 .team-list-link {
     width: 380px;
-    height: 470px;
 }
 .team-list {
     position: relative;
@@ -242,12 +235,12 @@ img {
     opacity: 1;
 }
 /* footer */
-.Footer {
+.footer {
     display: flex;
-    height: 62px;
+    min-height: 62px;
     justify-content: space-between;
     align-items: center;
-    border-top: 2px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
 .footer-text {
     font-family: "Montserrat", sans-serif;
@@ -264,9 +257,9 @@ img {
 }
 .form-footer {
     display: flex;
+    height: 40px;
 }
 .button-fuuter {
-    height: 40px;
     width: 150px;
     text-decoration: none;
     border: none;
@@ -279,12 +272,10 @@ img {
 }
 .input {
     width: 230px;
-    height: 40px;
     padding-left: 6px;
 }
 .input::placeholder {
     width: 230px;
-    height: 40px;
     font-family: "Roboto";
     font-style: italic;
     font-size: 14px;
