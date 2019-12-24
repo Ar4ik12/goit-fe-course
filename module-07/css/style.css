@@ -179,22 +179,33 @@ img {
     line-height: 1.125rem;
     width: 100%;
     padding-left: 1.25rem;
-    border-radius: 5px;
     font-size: 0.875rem;
     font-family: "Montserrat", sans-serif;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    border-radius: 2px;
 }
 .input-text:not(:last-child) {
     margin-bottom: 30px;
 }
-.form input[type='text']:valid:required, 
-.form input[type='email']:valid:required, 
-.form textarea:valid:required {
+.form input[type='text']:required:focus:valid, 
+.form input[type='email']:required:focus:valid, 
+.form textarea:required:focus:valid {
     border-color: green;
 }
-.form input[type='text']:invalid:required, 
-.form input[type='email']:invalid:required, 
-.form textarea:invalid:required {
+.form input[type='text']:required:focus:invalid, 
+.form input[type='email']:required:focus:invalid, 
+.form textarea:required:focus:invalid {
     border-color: red;
+}
+.input-text:focus {
+    outline: none;
+    outline-offset: 0;
+}
+.textarea-text:focus {
+    outline: none;
+    outline-offset: 0;
 }
 .textarea {
     width: calc(50% - 15px);
@@ -204,9 +215,12 @@ img {
     resize: none;
     padding-left: 1.25rem;
     padding-top: 1.25rem;
-    border-radius: 5px;
     font-size: 0.875rem;
     font-family: "Montserrat", sans-serif;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    border-radius: 2px;
 }
 .button {
     display: block;
