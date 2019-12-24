@@ -1,0 +1,329 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 17.5rem;
+    margin: 0 auto;
+}
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+/* HEADER */
+.header-menu {
+    padding-top: 1.25rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.button-link {
+    width: 5.625rem;
+    height: 2.25rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #ffffff;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(26, 25, 21, 0);
+    border-radius: 1.125rem;
+}
+.button-link:hover {
+    border-color: rgb(255, 255, 255);
+}
+.logo {
+    text-align: center;
+}
+.logo-site {
+    text-decoration: none;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+}
+/* CONTAINER HOLIDAY DREAMS */
+.img-holiday-dreams{
+    background-color: #1a1915;
+    background-image: url(../image/Vector\ Smart\ Object.png);
+    background-position: center;
+    background-size: cover;
+}
+.container-holiday-dreams {
+    padding-top: 14.375rem;
+    padding-bottom: 8.625rem;
+    text-align: center;
+}
+.logo-holiday-dreams {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.75rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+}
+.holiday-dreams {
+    display: block;
+}
+.text-holiday-dreams {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.125rem;
+    color: #ffffff;
+    margin-bottom: 1.125rem;
+}
+.link-holiday-partner {
+    padding-top: 0.6875rem;
+    display: block;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: #ffffff;
+    border-radius: 1.25rem;
+    background-color: rgb(255, 78, 80);
+    width: 100%;
+    height: 2.5rem;
+}
+.link-holiday-partner:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 78, 80);
+    border: 2px solid rgb(255, 78, 80);
+}
+/* CONTAINER MEET PARTNER */
+.container-meet-partners {
+    text-align: center;
+    padding-top: 4.25rem;
+    padding-bottom: 3.625rem;
+}
+.logo-meet-partner {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.375rem;
+    color: #333333;
+    margin-bottom: 1.25rem;
+}
+.partners-img img {
+    border-radius: 50%;
+}
+.meet-partners-list {
+    list-style: none;
+}
+.partners-img {
+    position: relative;
+    width: 7.625rem;
+    height: 7.625rem;
+    margin: 0 auto;
+}
+.meet-partners-name {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: #333333;
+    margin-top: 1.125rem;
+    margin-bottom: 1.125rem;
+}
+.meet-partners-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    color: #666666;
+    margin-bottom: 1.75rem;
+}
+.link-other-partners {
+    padding-top: 0.6875rem;
+    display: block;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: #ffffff;
+    border-radius: 1.25rem;
+    background-color: rgb(255, 78, 80);
+    width: 100%;
+    height: 2.5rem;
+}
+.link-other-partners:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 78, 80);
+    border: 2px solid rgb(255, 78, 80);
+}
+.partners-img::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 2.5625rem;
+    height: 2.5625rem;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    top: 5.3125rem;
+    left: 5.3125rem;
+}
+.bradly::before {
+    background-image: url(../image/team/Shape-1.png);
+    background-color: #ff4e50;
+}
+.lucas::before {
+    background-image: url(../image/team/Shape-2.png);
+    background-color: #ffa507;
+}
+.heather::before {
+    background-image: url(../image/team/Shape-3.png);
+    background-color: #1cd7ad;
+}
+.breadly-hunter::before {
+    background-image: url(../image/team/Shape-4.png);
+    background-color: #4e73db;
+}
+@media (max-width: 747px) {
+    .button-menu {
+        display: inline-block;
+        margin-bottom: 7.375rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (min-width: 748px) and (max-width: 939px) {
+    .header-menu {
+        padding: 0 2.375rem;
+    }
+    .meet-partners-list {
+        flex-wrap: wrap;
+        padding: 0 8rem;
+    }
+}
+@media (min-width: 748px) {
+    /* HEADER */
+    .container {
+        width: 748px;
+    }
+    .header-menu {
+        display: flex;
+        width: 748px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-top: 2.375rem;
+    }
+    /* CONTAINER HOLIDAY DREAMS */
+    .container-holiday-dreams {
+        padding-top: 223px;
+        padding-bottom: 234px;
+    }    
+    .img-holiday-dreams {
+        background-image: url(../image/Vector\ Smart\ Object-2.jpg);
+    }
+    .logo-holiday-dreams {
+        font-size: 3.25rem;
+        margin-bottom: 2.125rem;
+    }
+    .text-holiday-dreams {
+        font-size: 1.5rem;
+        margin-bottom: 2.25rem;
+    }
+    .link-holiday-partner {
+        width: 14.125rem;
+        margin: 0 auto;
+    }
+    /* CONTAINER MEET PARTNER */
+    .container-meet-partners {
+        padding-top: 4.75rem;
+        padding-bottom: 40px;
+    }
+    .meet-partners-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    .meet-partners-link {
+        width: 236px;
+    }
+    .marsha {
+        order: 3;
+    }
+    .hunter-breadly {
+        order: 4;
+    }
+    .logo-meet-partner {
+        margin-bottom: 2.0625rem;
+    }
+    .meet-partners-name {
+        margin-top: 1.375rem;
+        margin-bottom: 1.25rem;
+    }
+    .meet-partners-text {
+        margin-bottom: 3.625rem;
+    }
+    .link-other-partners {
+        width: 194px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 940px) {
+    .container {
+        width: 940px;
+    }
+    /* HEADER */
+    .header-menu {
+        width: 940px;
+    }
+    /* CONTAINER HOLIDAY DREAMS */
+    .img-holiday-dreams {
+        background-image: url(../image/Vector\ Smart\ Object-3.jpg);
+    }
+    /* CONTAINER MEET PARTNER */
+    .container-meet-partners {
+        padding-top: 4.5625rem;
+        padding-bottom: 4.625rem;
+    }
+    .meet-partners-link {
+        width: 13.75rem;
+    }
+    .meet-partners-text {
+        margin-bottom: 2.375rem;
+    }
+}
