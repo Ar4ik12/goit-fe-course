@@ -57,13 +57,15 @@ img {
 }
 /* HEADER */
 .header-menu {
-    padding-top: 1.25rem;
+    width: 100%;
     position: absolute;
     left: 50%;
+    right: 50%;
     transform: translateX(-50%);
+    text-align: center;
 }
 .button-link {
-    width: 5.625rem;
+    width: 90px;
     height: 2.25rem;
     font-family: "Montserrat", sans-serif;
     font-size: 0.875rem;
@@ -73,7 +75,7 @@ img {
     border-width: 2px;
     border-color: rgba(255, 255, 255, 0);
     background-color: rgba(26, 25, 21, 0);
-    border-radius: 1.125rem;
+    border-radius: 18px;
 }
 .button-link:hover {
     border-color: rgb(255, 255, 255);
@@ -99,7 +101,7 @@ img {
 }
 .container-holiday-dreams {
     padding-top: 14.375rem;
-    padding-bottom: 8.625rem;
+    padding-bottom: 138px;
     text-align: center;
 }
 .logo-holiday-dreams {
@@ -223,10 +225,15 @@ img {
 }
 @media (max-width: 747px) {
     .button-menu {
-        display: inline-block;
-        margin-bottom: 7.375rem;
         width: 100%;
+        margin-bottom: 7.375rem;
+    }
+    .positin-header {
+        display: inline-block;
         text-align: center;
+    }
+    .header-menu {
+        padding-top: 1.25rem;
     }
 }
 @media (min-width: 748px) and (max-width: 939px) {
@@ -243,12 +250,13 @@ img {
     .container {
         width: 748px;
     }
-    .header-menu {
-        display: flex;
-        width: 748px;
+    .positin-header {
         flex-direction: row-reverse;
         justify-content: space-between;
         padding-top: 2.375rem;
+        display: flex;
+        align-items: center;
+        width: 100%;
     }
     /* CONTAINER HOLIDAY DREAMS */
     .container-holiday-dreams {
