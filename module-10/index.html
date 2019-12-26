@@ -14,32 +14,32 @@
         <div class="container ">
             <nav class="site__nav">
                 <a class="site__nav-logo" href="#">MoGo</a>
-                <ul class="menu-nav">
-                    <li class="site-nav-items">
-                        <a href="#" class="site-nav-link">about</a>
+                <ul class="site__nav-menu">
+                    <li class="site__nav-items">
+                        <a href="#" class="site__nav-item-link">about</a>
                     </li>
                     <li class="site-nav-items">
-                        <a href="#" class="site-nav-link">service</a>
+                        <a href="#" class="site__nav-item-link">service</a>
                     </li>
                     <li class="site-nav-items">
-                        <a href="#" class="site-nav-link">work</a>
+                        <a href="#" class="site__nav-item-link">work</a>
                     </li>
                     <li class="site-nav-items">
-                        <a href="#" class="site-nav-link">blog</a>
+                        <a href="#" class="site__nav-item-link">blog</a>
                     </li>
                     <li class="site-nav-items">
-                        <a href="#" class="site-nav-link">contact</a>
+                        <a href="#" class="site__nav-item-link">contact</a>
                     </li>
                 </ul>
-                <div class="site__nav-button">
-                    <button class="button">
+                <div class="site-nav__button">
+                    <button class="site-nav__button-item">
                         <svg class="site__nav-button-svg">
-                            <use href="./images/sprite.svg#icon-SHOPPING"></use>
+                            <use href="./image/sprite.svg#icon-SHOPPING"></use>
                         </svg>
                     </button>
-                    <button class="button">
+                    <button class="site-nav__button-item">
                         <svg class="site__nav-button-svg">
-                            <use href="./images/sprite.svg#icon-MAGNIFYING"></use>
+                            <use href="./image/sprite.svg#icon-MAGNIFYING"></use>
                         </svg>
 
                     </button>
@@ -47,16 +47,16 @@
             </nav>
         </div>
     </header>
-    <main class="container-main">
+    <main>
         <section class="fon">
-            <div class="container">
-                <h2>Creative Template<span>Welcome to MoGo</span></h2>
-                <button>Load more</button>
+            <div class="container fon__container">
+                <h2 class="fon__text">Creative Template<span class="fon__logo">Welcome to MoGo</span></h2>
+                <button class="fon__button">Learn more</button>
             </div>
         </section>
         <section class="services">
             <div class="container">
-                <h2 class="logo-one">We work with<span class="logo-two">amazing services</span></h2>
+                <h2 class="text-services-team">We work with<span class="logo-services-team">amazing services</span></h2>
                 <ul class="services__list">
                     <li class="services__list-items photografy">
                         <h3 class="services-name">photography</h3>
@@ -87,51 +87,67 @@
         </section>
         <section class="container-team">
             <div class="container">
-                <h2 class="logo-one">We work with<span class="logo-two">amazing services</span> </h2>
+                <h2 class="text-services-team">We work with<span class="logo-services-team">amazing services</span> </h2>
                 <p class="text-team">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 <ul class="team__list">
                     <li class="team__list-link">
                         <div class="team__list-img">
-                            <img class="img-team" src="./image/team/Layer1.jpg" alt="Matthew Dix" width="380" height="470">
+                            <img class="team__img" srcset="./image/team/Layer1.jpg 380w, ./image/team/Layer1@2x 760w" src="./image/team/Layer1.jpg" alt="Matthew Dix" sizes="380px" height="470">
                             <div class="overlay">
-                                <ul class="list-link">
-                                    <li><a class="link-items facebook" href="#">
+                                <ul class="overlay__list">
+                                    <li><a class="overlay__list-link" href="#">
                                         <svg class="social-list__svg">
-                                            <use href="./images/sprite.svg#icon-facebook"></use>
+                                            <use href="./image/sprite.svg#icon-facebook"></use>
                                         </svg>
                                     </a></li>
-                                    <li><a class="link-items twitter" href="#">
+                                    <li><a class="overlay__list-link" href="#">
                                         <svg class="social-list__svg">
-                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                            <use href="./image/sprite.svg#icon-twitter"></use>
                                         </svg>
                                     </a></li>
-                                    <li><a class="link-items pinterest" href="#">
+                                    <li><a class="overlay__list-link" href="#">
                                         <svg class="social-list__svg">
-                                            <use href="./images/sprite.svg#icon-pinterest"></use>
+                                            <use href="./image/sprite.svg#icon-pinterest"></use>
                                         </svg>
                                     </a></li>
-                                    <li><a class="link-items instagram" href="#">
+                                    <li><a class="overlay__list-link" href="#">
                                         <svg class="social-list__svg">
-                                            <use href="./images/sprite.svg#icon-instagram"></use>
+                                            <use href="./image/sprite.svg#icon-instagram"></use>
                                         </svg>
                                     </a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="team-name-profession">
-                            <h3 class="team-name">Matthew Dix</h3>
-                            <p class="team-profession">Graphic Design</p>
+                        <div class="team__name-profession">
+                            <h3 class="team__name">Matthew Dix</h3>
+                            <p class="team__profession">Graphic Design</p>
                         </div>
                     </li>
                     <li class="team__list-link">
                         <div class="team__list-img">
-                            <img class="img-team" src="./image/team/Layer2.jpg" alt="Christopher Campbell" width="380" height="470">
+                            <img class="team__img" srcset="./image/team/Layer2.jpg 380w, ./image/team/Layer2@2x 760w" src="./image/team/Layer2.jpg" alt="Matthew Dix" sizes="380px" height="470">
                             <div class="overlay">
-                                <ul class="list-link">
-                                    <li><a class="link-items facebook" href="#"></a></li>
-                                    <li><a class="link-items twitter" href="#"></a></li>
-                                    <li><a class="link-items pinterest" href="#"></a></li>
-                                    <li><a class="link-items instagram" href="#"></a></li>
+                                <ul class="overlay__list">
+                                    <li><a class="overlay__list-link" href="#">
+                                        <svg class="social-list__svg">
+                                            <use href="./image/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a></li>
+                                    <li><a class="overlay__list-link" href="#">
+                                        <svg class="social-list__svg">
+                                            <use href="./image/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a></li>
+                                    <li><a class="overlay__list-link" href="#">
+                                        <svg class="social-list__svg">
+                                            <use href="./image/sprite.svg#icon-pinterest"></use>
+                                        </svg>
+                                    </a></li>
+                                    <li><a class="overlay__list-link" href="#">
+                                        <svg class="social-list__svg">
+                                            <use href="./image/sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -142,13 +158,29 @@
                     </li>
                     <li class="team__list-link">
                         <div class="team__list-img">
-                            <img class="img-team" src="./image/team/Layer3.jpg" alt="Michael Fertig" width="380" height="470">
+                            <img class="team__img" srcset="./image/team/Layer3.jpg 380w, ./image/team/Layer3@2x 760w" src="./image/team/Layer3.jpg" alt="Matthew Dix" sizes="380px" height="470">
                             <div class="overlay">
-                                <ul class="list-link">
-                                    <li><a class="link-items facebook" href="#"></a></li>
-                                    <li><a class="link-items twitter" href="#"></a></li>
-                                    <li><a class="link-items pinterest" href="#"></a></li>
-                                    <li><a class="link-items instagram" href="#"></a></li>
+                                <ul class="overlay__list">
+                                    <li><a class="overlay__list-link" href="#">
+                                        <svg class="social-list__svg">
+                                            <use href="./image/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a></li>
+                                    <li><a class="overlay__list-link" href="#">
+                                        <svg class="social-list__svg">
+                                            <use href="./image/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a></li>
+                                    <li><a class="overlay__list-link" href="#">
+                                        <svg class="social-list__svg">
+                                            <use href="./image/sprite.svg#icon-pinterest"></use>
+                                        </svg>
+                                    </a></li>
+                                    <li><a class="overlay__list-link" href="#">
+                                        <svg class="social-list__svg">
+                                            <use href="./image/sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a></li>
                                 </ul>
                             </div>
                         </div>
