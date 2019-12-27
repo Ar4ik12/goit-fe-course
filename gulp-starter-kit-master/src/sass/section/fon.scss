@@ -1,0 +1,43 @@
+.fon {
+  background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url(../images/Layer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1000px;
+  background-position: center;
+  
+  &__container {
+    padding-top: 232px;
+    padding-bottom: 230px;
+
+    &-text {
+      font-family: "Kaushan Script", sans-serif;
+      font-size: 72px;
+      text-align: center;
+      margin-bottom: 120px;
+    }
+
+    &-logo {
+      font-family: "Montserrat", sans-serif;
+      font-size: 150px;
+      display: block;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    &-button {
+      display: block;
+      margin: 0 auto;
+      border: 3px solid rgb(255, 255, 255);
+      background-color: rgba(0, 0, 0, 0);
+      width: 164px;
+      height: 44px;
+      color: #ffffff;
+    }
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .fon {
+    background-image: url(../../images/Layer@2x.jpg);
+  }
+}

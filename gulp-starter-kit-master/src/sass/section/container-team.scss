@@ -1,0 +1,117 @@
+.team {
+  padding-bottom: 86px;
+
+  &__text {
+    font-size: 15px;
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(153, 153, 153);
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    max-width: 980px;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+
+    &-link {
+      width: 380px;
+    }
+  }
+}
+
+.member-card {
+  &:hover .member-card__team-overlay {
+    opacity: 1;
+  }
+
+  &__team {
+    position: relative;
+    margin-bottom: 20px;
+
+    &:hover .member-card__team-overlay {
+      opacity: 1;
+      transition-duration: 200ms;
+      box-shadow: 10px 10px 0 #95e1d3;
+      transform: translate(-10px, -10px);
+    }
+
+    &:hover .member-card__team-img {
+      transform: translate(-10px, -10px);
+    }
+
+    
+
+    &-img {
+      transition-duration: 200ms;
+    }
+
+    &-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+      opacity: 0;
+      transition-duration: 200ms;
+
+      &-list {
+        list-style: none;
+        display: flex;
+
+        &-link {
+          background-color: #fce38a;
+          width: 56px;
+          height: 56px;
+          display: flex;
+          margin-right: 1px;
+          transition: linear 200ms;
+          align-items: center;
+
+          &-svg {
+            width: 26px;
+            height: 22px;
+            fill: #f38181;
+            margin: 0 auto;
+          }
+
+          &:hover {
+            background-color: #f38181;
+            transition: linear 200ms;
+          }
+
+          &:hover .member-card__team-overlay-list-link-svg {
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  &__text {
+    text-align: center;
+
+    &-name {
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      color: rgb(51, 51, 51);
+      text-transform: uppercase;
+      line-height: 16px;
+      margin-bottom: 10px;
+    }
+
+    &-profession {
+      font-size: 15px;
+      font-family: "Roboto", sans-serif;
+      color: rgb(153, 153, 153);
+      font-style: italic;
+      line-height: 24px;
+    }
+  }
+}
