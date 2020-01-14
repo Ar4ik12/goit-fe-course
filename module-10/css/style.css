@@ -175,13 +175,15 @@ html {
         font-family: "Kaushan Script", sans-serif;
         font-size: 72px;
         text-align: center;
-        margin-bottom: 120px; }
+        margin-bottom: 120px;
+        color: #ffffff; }
       .fon__container-logo {
         font-family: "Montserrat", sans-serif;
         font-size: 150px;
         display: block;
         text-transform: uppercase;
-        text-align: center; }
+        text-align: center;
+        color: #ffffff; }
       .fon__container-button {
         display: block;
         margin: 0 auto;
